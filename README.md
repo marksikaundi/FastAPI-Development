@@ -16,4 +16,7 @@ For Auto reload server
     "published": false
     }
 </i>
+<hr>
+<h4>hit below the link to the api👇👇</h4>
+https://www.getpostman.com/collections/7ae4398d07bd1f5cc642
 
