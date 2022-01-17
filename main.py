@@ -9,6 +9,9 @@ app = FastAPI()
 class Post(BaseModel):
     title: str
     content: str
+    published: bool = True
+
+
 
 @app.get("/")
 def root():
@@ -30,7 +33,7 @@ def  get_posts():
 # title str, content str
 @app.post("/createposts")
 def create_posts(new_post: Post):
-    print(new_post)
+    print(new_post.published)
     return {"data": "new post"}
 
 

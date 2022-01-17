@@ -10,3 +10,10 @@ For Auto reload server
 <i>Contents</i>
  startend working with schemas for the API
 
+ <i>{
+    "title": "CS60APA",
+    "content": "Join Us at computer science 60 advanced project",
+    "published": false
+    }
+</i>
+
