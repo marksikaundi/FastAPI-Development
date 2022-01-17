@@ -14,6 +14,10 @@ class Post(BaseModel):
     rating: Optional[int] = None
 
 
+my_posts = [{"title": "title of post 1", "content": "contents of post 1", "id": 1}, {"title": 
+"Favourites Programming language", "contents": "Python & Javascript", "id": 2}] #Array
+
+
 
 @app.get("/")
 def root():
@@ -21,7 +25,7 @@ def root():
 
 @app.get("/posts")
 def  get_posts():
-     return {"data:" "this is your post"}
+     return {"data": my_posts}
         
 
 # working with post methods
@@ -33,7 +37,7 @@ def  get_posts():
 
 # PYDANTIC basemodel
 # title str, content str
-@app.post("/createposts")
+@app.post("/posts")
 def create_posts(post: Post):
     print(post)
     print("post.dict()")
